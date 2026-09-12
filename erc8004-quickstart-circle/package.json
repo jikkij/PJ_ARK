@@ -1,0 +1,23 @@
+{
+  "name": "erc8004-quickstart-circle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx --env-file=.env index.ts",
+    "entity-secret": "tsx --env-file=.env setup-entity-secret.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@circle-fin/developer-controlled-wallets": "^10.8.0",
+    "viem": "^2.56.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}
