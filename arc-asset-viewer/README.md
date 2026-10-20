@@ -25,3 +25,11 @@ http://localhost:3000 を、ウォレット拡張が入ったブラウザで開�
 ```bash
 npm test
 ```
+
+## デプロイ
+
+https://arc-asset-viewer.vercel.app で公開しています。Vercelプロジェクト `arc-asset-viewer` はGitHubリポジトリと連携していて、Root Directoryは `arc-asset-viewer` です。
+
+- `main` へのpushで本番に自動デプロイされます
+- PRごとにプレビューデプロイが作られます
+- このフォルダに変更がないコミットではビルドをスキップします(Ignored Build Step: `git diff --quiet HEAD^ HEAD -- .`)
