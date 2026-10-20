@@ -14,7 +14,7 @@ export function ExplorerLink({ address }: ExplorerLinkProps) {
       target="_blank"
       rel="noreferrer"
     >
-      Arcscan Testnetで見る ↗
+      Arc Testnet Explorerで見る ↗
     </a>
   );
 }
