@@ -1,6 +1,6 @@
 import { defineChain } from "viem";
 
-// Verified against https://docs.arc.io/arc/references/connect-to-arc on 2026-07-15.
+// Verified against https://docs.arc.io/arc/references/connect-to-arc on 2026-10-20.
 // Re-check before relying on this in a new project.
 export const arcTestnet = defineChain({
   id: 5042002,
@@ -12,14 +12,14 @@ export const arcTestnet = defineChain({
   },
   rpcUrls: {
     default: {
-      http: ["https://rpc.testnet.arc.network"],
-      webSocket: ["wss://rpc.testnet.arc.network"],
+      http: ["https://rpc.testnet.arc.io"],
+      webSocket: ["wss://rpc.testnet.arc.io"],
     },
   },
   blockExplorers: {
     default: {
-      name: "Arcscan Testnet",
-      url: "https://testnet.arcscan.app",
+      name: "Arc Testnet Explorer",
+      url: "https://explorer.testnet.arc.io",
     },
   },
   testnet: true,
