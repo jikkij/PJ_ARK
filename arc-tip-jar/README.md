@@ -42,7 +42,7 @@ npm run build
 
 ## Deployment
 
-Live at https://arc-tip-jar.vercel.app. The Vercel project `arc-tip-jar` is connected to this GitHub repository with Root Directory `arc-tip-jar`.
+Live at https://arc-tip-jar-weld.vercel.app. The Vercel project `arc-tip-jar` is connected to this GitHub repository with Root Directory `arc-tip-jar`.
 
 - Pushes to `main` deploy to production automatically
 - Each PR gets a preview deployment
