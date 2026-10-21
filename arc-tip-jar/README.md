@@ -26,8 +26,8 @@ Key design points:
 ## Running the UI
 
 ```bash
-npm install   # or: bun install
-npm run dev   # or: bun run dev
+npm install
+npm run dev
 ```
 
 The app runs at http://localhost:5173.
@@ -37,8 +37,16 @@ All network constants and the deployed address live in `src/tipjar-config.ts`. U
 ## Building for production
 
 ```bash
-npm run build   # or: bun run build
+npm run build
 ```
+
+## Deployment
+
+Live at https://arc-tip-jar.vercel.app. The Vercel project `arc-tip-jar` is connected to this GitHub repository with Root Directory `arc-tip-jar`.
+
+- Pushes to `main` deploy to production automatically
+- Each PR gets a preview deployment
+- Commits that don't touch this folder skip the build (Ignored Build Step: `git diff --quiet HEAD^ HEAD -- .`)
 
 ## Tech stack
 
@@ -54,4 +62,4 @@ npm run build   # or: bun run build
 forge test
 ```
 
-All 17 unit tests pass, including fuzz runs on the tip function.
+Requires Foundry and `forge install foundry-rs/forge-std` (`lib/` is not committed). Arc Studio reported all 17 unit tests passing, including fuzz runs on the tip function.
